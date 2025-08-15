@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lessons from Healthcare Data Integration – Karthik Reddy Mettu</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container header-inner">
+        <div class="logo">Karthik</div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#blog">Blog</a></li>
+          </ul>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </header>
+    <main class="section">
+      <div class="container">
+        <h1 class="section-title">Lessons from Healthcare Data Integration</h1>
+        <p class="blog-date">Aug 2024</p>
+        <img src="../blog1.png" alt="abstract network" style="width:100%; max-height:300px; object-fit:cover; border-radius:8px; margin:1.5rem 0;" />
+        <article>
+          <p>
+            Integrating data across multiple electronic health record (EHR)
+            systems is a complex undertaking. At UnitedHealth Group I worked on
+            merging information from EPIC, Cerner and Meditech into a single
+            warehouse built on Google BigQuery. The goal was to reduce data
+            retrieval time and provide clinicians with a holistic view of
+            patient care.
+          </p>
+          <p>
+            We used Talend and Apache NiFi to orchestrate extraction,
+            transformation and loading of millions of records each day. FHIR and
+            HL7 standards were applied to ensure interoperability and data
+            quality. Once unified, the data fed into interactive Tableau
+            dashboards displaying patient flow, resource allocation and clinical
+            outcomes.
+          </p>
+          <p>
+            Building this system taught me that technical proficiency alone
+            isn't enough—clear communication with stakeholders is crucial. By
+            engaging clinicians, IT teams and compliance officers throughout the
+            process, we created a solution that met regulatory requirements and
+            delivered real‑time insights. The project ultimately improved
+            operational efficiency by 20% and opened the door to more advanced
+            predictive modelling in the future.
+          </p>
+        </article>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 Karthik Reddy Mettu. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
