@@ -473,3 +473,37 @@ timeline-item h3 {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Mobile navigation toggle */
+#nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--accent);
+  margin-left: 1rem;
+}
+
+/* Mobile nav list hidden by default on small screens */
+@media (max-width: 768px) {
+  #nav-toggle {
+    display: block;
+  }
+  nav ul.nav-list {
+    display: none;
+    flex-direction: column;
+    gap: 0.8rem;
+    position: absolute;
+    top: var(--header-height);
+    right: 1rem;
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    z-index: 100;
+  }
+  nav ul.nav-list.open {
+    display: flex;
+  }
+}
