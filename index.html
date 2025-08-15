@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!--
+  A modern, minimalist portfolio for Karthik Reddy Mettu.  
+  This single‑page site is designed to make a strong first impression while remaining
+  clean and easy to navigate.  Each section highlights a different part of the
+  professional story: about, skills, experience, projects, blog and contact.
+  A dark/light theme switcher offers visitors a comfortable viewing option on any
+  device.  Feel free to modify the content or styling by editing the HTML,
+  CSS and JavaScript files in this directory.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karthik Reddy Mettu | Data Scientist</title>
+    <!-- Google Font for a modern, legible typeface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header with navigation and theme toggle -->
+    <header id="header">
+      <div class="container header-inner">
+        <div class="logo">Karthik</div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Theme toggle button -->
+        <button id="theme-toggle" aria-label="Toggle dark mode">✪</button>
+      </div>
+    </header>
+
+    <!-- Hero section -->
+    <section id="home" class="hero section">
+      <div class="hero-background"></div>
+      <div class="container hero-content">
+        <h1 class="hero-title">Hi, I'm <span class="accent">Karthik Reddy Mettu</span></h1>
+        <p class="hero-tagline">
+          Data scientist and analytics professional transforming complex data into
+          actionable insights.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="assets/resume.pdf" class="btn secondary" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a data scientist with a passion for turning complex data into
+              clear, actionable stories. With experience spanning healthcare,
+              education and finance, I use Python, SQL and visualization tools
+              to uncover insights that drive strategic decision‑making. I thrive
+              on building scalable pipelines, crafting interactive dashboards and
+              mentoring teams in data storytelling.
+            </p>
+            <p>
+              Outside of work you'll often find me exploring new technologies,
+              writing about analytics and participating in community events. I
+              believe that effective communication is just as important as
+              technical expertise, and I enjoy making data approachable for
+              everyone.
+            </p>
+            <div class="contact-info">
+              <p><strong>Location:</strong> Houston, Texas, USA</p>
+              <p><strong>Email:</strong> <a href="mailto:karthikmettu14@gmail.com">karthikmettu14@gmail.com</a></p>
+              <p><strong>Phone:</strong> <a href="tel:7132020004">713 202 0004</a></p>
+              <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/karthik-mettu" target="_blank">/in/karthik-mettu</a></p>
+              <p><strong>GitHub:</strong> <a href="https://github.com/karthik1636" target="_blank">github.com/karthik1636</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills" class="section bg-alt">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Data Analysis &amp; Modeling</h3>
+            <p>
+              Pandas, NumPy, Scikit‑learn, TensorFlow, Keras, logistic regression,
+              decision trees, clustering, anomaly detection
+            </p>
+          </div>
+          <div class="skill-card">
+            <h3>Visualization</h3>
+            <p>
+              Tableau, Power BI, SPSS, interactive dashboards, KPI design
+            </p>
+          </div>
+          <div class="skill-card">
+            <h3>Data Wrangling &amp; ETL</h3>
+            <p>
+              Apache NiFi, Talend, SSIS, data cleansing, transformation, quality
+              assessment
+            </p>
+          </div>
+          <div class="skill-card">
+            <h3>Databases &amp; Cloud</h3>
+            <p>
+              SQL Server, Oracle, BigQuery, Hadoop, Hive, AWS, GCP, query
+              optimization
+            </p>
+          </div>
+          <div class="skill-card">
+            <h3>Compliance &amp; Standards</h3>
+            <p>
+              HIPAA, FHIR, HL7, data privacy regulations, data governance
+            </p>
+          </div>
+          <div class="skill-card">
+            <h3>Collaboration</h3>
+            <p>
+              Agile/Scrum, Jira, Git/GitHub, project documentation, mentoring
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-date">Aug 2024 – Present</span>
+            <h3>Data Scientist – VSSOFT LLC / UnitedHealth Group</h3>
+            <ul>
+              <li>
+                Integrated healthcare data systems (EPIC, Cerner, Meditech) with
+                Talend and Apache NiFi, reducing data retrieval time by 30%.
+              </li>
+              <li>
+                Designed real‑time Tableau dashboards for patient flow and resource
+                allocation, boosting operational efficiency by 20%.
+              </li>
+              <li>
+                Built machine‑learning models with TensorFlow and Keras for
+                diagnosis prediction while ensuring HIPAA compliance.
+              </li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Aug 2023 – Dec 2024</span>
+            <h3>Instructional Assistant – University of Houston</h3>
+            <ul>
+              <li>
+                Facilitated labs on regression analysis, Bayesian methods and
+                hypothesis testing for 50+ graduate students.
+              </li>
+              <li>
+                Led weekly Python sessions on data wrangling and ML modelling,
+                helping 87% of students achieve scores above 90%.
+              </li>
+              <li>
+                Mentored student capstone projects and championed data storytelling.
+              </li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">May 2024 – Aug 2024</span>
+            <h3>Generative AI Engineer (Volunteer) – American Red Cross</h3>
+            <ul>
+              <li>
+                Created an AI agent via Azure PromptFlow to automate analysis of 500+
+                monthly receipts, saving ~10 hours/week.
+              </li>
+              <li>
+                Developed Tableau dashboards for disaster response KPIs, improving
+                efficiency by 15%.
+              </li>
+              <li>
+                Collaborated with disaster response teams to align analytics with
+                emergency objectives.
+              </li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Aug 2022 – Jul 2023</span>
+            <h3>Data Analyst – Cognizant (JPMorgan Chase)</h3>
+            <ul>
+              <li>
+                Implemented credit risk and fraud‑detection models, reducing
+                non‑performing loans by 8% and safeguarding assets.
+              </li>
+              <li>
+                Built customer‑segmentation models using K‑means and K‑medoids,
+                increasing engagement by 20% and cross‑sell revenue by 10%.
+              </li>
+              <li>
+                Developed a Hadoop/Hive data warehouse and Power BI dashboards
+                for real‑time portfolio insights.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="section bg-alt">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Healthcare Data Integration</h3>
+            <p>
+              Leveraged Talend and Apache NiFi to integrate disparate healthcare systems
+              (EPIC, Cerner, Meditech) into a unified data warehouse, reducing retrieval
+              time by 30% and enabling seamless interoperability across platforms.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>Disaster Response AI Agent</h3>
+            <p>
+              Designed an AI agent with Azure PromptFlow to automatically analyse
+              disaster‑relief receipts. The solution cut manual effort by 85% and
+              delivered timely insights for operations.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>Credit Risk &amp; Fraud Detection</h3>
+            <p>
+              Developed supervised and unsupervised models to predict credit risk and
+              detect anomalous transactions for a major bank, improving loan accuracy and
+              safeguarding assets.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>Customer Segmentation</h3>
+            <p>
+              Used K‑means and K‑medoids clustering to identify high‑value customer
+              segments, enabling targeted marketing campaigns and boosting engagement by
+              20%.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>Interactive Dashboards</h3>
+            <p>
+              Built dynamic Tableau and Power BI dashboards for executive and clinical
+              teams, visualising KPIs such as patient flow, customer churn and portfolio
+              risk.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog section -->
+    <section id="blog" class="section">
+      <div class="container">
+        <h2 class="section-title">Blog</h2>
+        <p class="section-subtitle">
+          I love sharing what I learn. Here are a few articles exploring projects, insights
+          and musings about data.
+        </p>
+        <div class="blog-grid">
+          <a class="blog-card" href="blog/ai-disaster-response.html">
+            <img src="blog1.png" alt="Blog image 1" />
+            <div class="blog-content">
+              <h3>Building an AI Agent for Disaster Response</h3>
+              <p>
+                A behind‑the‑scenes look at how I built a generative AI agent to automate
+                receipt analysis for the American Red Cross.
+              </p>
+              <span class="blog-date">May 2024</span>
+            </div>
+          </a>
+          <a class="blog-card" href="blog/healthcare-data-integration.html">
+            <img src="blog1.png" alt="Blog image 2" />
+            <div class="blog-content">
+              <h3>Lessons from Healthcare Data Integration</h3>
+              <p>
+                Learn about the challenges and best practices when unifying electronic
+                health‑record systems in large organisations.
+              </p>
+              <span class="blog-date">Aug 2024</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section bg-alt">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">
+          Whether you'd like to discuss a project, collaborate or just say hello, feel free
+          to reach out.
+        </p>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <h3>Email</h3>
+            <p><a href="mailto:karthikmettu14@gmail.com">karthikmettu14@gmail.com</a></p>
+          </div>
+          <div class="contact-item">
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/karthik-mettu" target="_blank">/in/karthik-mettu</a></p>
+          </div>
+          <div class="contact-item">
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/karthik1636" target="_blank">github.com/karthik1636</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 Karthik Reddy Mettu. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
