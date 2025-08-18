@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>🎬 Movie Recommender System – Karthik Reddy Mettu</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <meta name="description" content="Production-ready movie recommendation system with SVD collaborative filtering, AI (Ollama), auth, ratings, and watchlist." />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container header-inner">
+        <div class="logo">Karthik</div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#blog">Blog</a></li>
+          </ul>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <h1 class="section-title">🎬 Movie Recommender System</h1>
+        <p class="blog-date">Aug 2025</p>
+
+        <!-- HERO: Demo + CTA -->
+        <article>
+          <p>
+            A production-ready recommender app with <strong>SVD collaborative filtering</strong>, an
+            <strong>AI Movie Assistant</strong> powered by <em>Ollama</em>, and full <strong>user flows</strong>:
+            authentication, ratings, preferences, and watchlist.
+          </p>
+
+          <div style="display:grid; gap:1rem; grid-template-columns:1fr; align-items:center;">
+            <!-- Embedded video (update path if the video is stored in a subfolder) -->
+            <video controls playsinline style="width:100%; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,.15);">
+              <source src="https://raw.githubusercontent.com/karthik1636/movie-recommender-system/master/Movie_Recommender_Demo_compressed.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <!-- Live demo CTA -->
+            <a class="button" href="https://movie-recommender-system-nwgrnxxqgkvx9c8bpfzmmv.streamlit.app/" target="_blank" rel="noopener"
+               style="display:inline-block; text-align:center; padding:.9rem 1.2rem; border-radius:10px; font-weight:600;">
+              🚀 Open Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- Snapshots -->
+        <section aria-labelledby="shots" style="margin-top:2rem;">
+          <h2 id="shots" class="section-title">Snapshots</h2>
+          <div style="display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
+            <figure style="margin:0;">
+              <img src="https://private-user-images.githubusercontent.com/149125097/460667905-9398fe70-9ea7-4563-a6d4-740edfad747c.png" alt="Onboarding and ratings UI" style="width:100%; border-radius:10px; object-fit:cover;" />
+              <figcaption style="opacity:.8; font-size:.95rem; margin-top:.25rem;">Onboarding &amp; ratings</figcaption>
+            </figure>
+            <figure style="margin:0;">
+              <img src="https://private-user-images.githubusercontent.com/149125097/460668206-c2e27eb4-40ae-4557-a13b-61f55b206beb.png" alt="AI Movie Assistant with Ollama" style="width:100%; border-radius:10px; object-fit:cover;" />
+              <figcaption style="opacity:.8; font-size:.95rem; margin-top:.25rem;">AI Movie Assistant (Ollama)</figcaption>
+            </figure>
+          </div>
+          <!-- sources: screenshots from repo README -->
+        </section>
+
+        <!-- Feature highlights (interactive details) -->
+        <section aria-labelledby="features" style="margin-top:2rem;">
+          <h2 id="features" class="section-title">🚀 Key Features</h2>
+
+          <details open>
+            <summary><strong>Core Recommendation Engine</strong></summary>
+            <ul>
+              <li>SVD-based collaborative filtering &amp; cosine-similarity “similar movies”.</li>
+              <li>Search over MovieLens titles; quick cold-start via content fallback.</li>
+              <li>Retrain instantly after new ratings.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary><strong>AI-Powered Assistant</strong></summary>
+            <ul>
+              <li>Local LLM via <em>Ollama</em> (e.g., <code>phi</code>, <code>gemma:2b</code>).</li>
+              <li>Natural-language queries (e.g., “sci-fi thrillers from the 2010s”).</li>
+              <li>Hybrid: cross-references AI suggestions with your catalog &amp; preferences.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary><strong>User Management</strong></summary>
+            <ul>
+              <li>Sign up/in, profile, preferences (genres/decades).</li>
+              <li>Ratings &amp; watchlist with instant feedback.</li>
+              <li>SQLite today, structured for easy Postgres/RDS migration.</li>
+            </ul>
+          </details>
+        </section>
+
+        <!-- Tech stack / How to run -->
+        <section aria-labelledby="setup" style="margin-top:2rem;">
+          <h2 id="setup" class="section-title">🛠️ Tech &amp; Setup</h2>
+          <div class="card">
+            <ul>
+              <li><strong>Stack:</strong> Python, Streamlit, Surprise (SVD), SQLite, Ollama.</li>
+              <li><strong>Run locally:</strong> <code>pip install -r requirements.txt</code> → <code>python api/main.py</code> → <code>streamlit run streamlit_app_enhanced.py</code>.</li>
+              <li><strong>Ollama:</strong> <code>ollama pull phi</code> (or <code>gemma:2b</code>) and keep <code>ollama serve</code> running.</li>
+              <li><strong>Docker:</strong> <code>docker-compose up --build</code>.</li>
+            </ul>
+          </div>
+          <p style="margin-top:.75rem;">
+            Explore the full repository for scripts, tests, and deployment: 
+            <a href="https://github.com/karthik1636/movie-recommender-system" target="_blank" rel="noopener">GitHub →</a>
+          </p>
+        </section>
+
+        <!-- Collapsible architecture -->
+        <section aria-labelledby="arch" style="margin-top:2rem;">
+          <h2 id="arch" class="section-title">🔧 Architecture (Collapse/Expand)</h2>
+          <details>
+            <summary><strong>Recommendation &amp; Data</strong></summary>
+            <p>Surprise SVD for MF, cosine item-embeddings for “similar,” MovieLens-Small import, real-time model refresh after ratings.</p>
+          </details>
+          <details>
+            <summary><strong>App &amp; API</strong></summary>
+            <p>Streamlit multipage UX (Home, Recommendations, AI Assistant, Profile). Clean DB ops for users, ratings, watchlist, and search.</p>
+          </details>
+          <details>
+            <summary><strong>Security</strong></summary>
+            <p>Passwords hashed (SHA-256 + salt), parameterized SQL, no external data sharing; AI runs locally.</p>
+          </details>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 Karthik Reddy Mettu. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Optional: tiny progressive enhancement for <details> (keeps your existing script.js untouched) -->
+    <script>
+      document.querySelectorAll('details').forEach(d => {
+        d.addEventListener('toggle', () => {
+          d.style.boxShadow = d.open ? '0 6px 18px rgba(0,0,0,.08)' : 'none';
+          d.style.borderRadius = '10px';
+          d.style.padding = d.open ? '0.5rem 0.75rem' : '0.25rem 0';
+        });
+      });
+    </script>
+    <script src="../script.js"></script>
+  </body>
+</html>
